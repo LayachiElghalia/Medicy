@@ -1,0 +1,98 @@
+/* src/Search.css */
+
+.search-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #F9F9F9;
+  min-height: 100vh;
+  color: #333;
+}
+
+/* Header */
+.search-header {
+  background-color: #D3D3D3;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-logo-img { height: 35px; cursor: pointer; }
+.menu-btn-search { background: none; border: none; cursor: pointer; }
+
+/* Menu Dropdown */
+.search-menu-dropdown {
+  position: absolute; top: 40px; right: 0;
+  background: white; border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1); width: 180px; z-index: 100;
+}
+.search-menu-dropdown ul { list-style: none; padding: 0; margin: 0; }
+.search-menu-dropdown li { padding: 12px; border-bottom: 1px solid #f0f0f0; cursor: pointer; font-size: 0.9rem; }
+.search-menu-dropdown li:hover { background: #f9f9f9; }
+
+/* Contenu */
+.search-content { max-width: 600px; margin: 0 auto; padding: 20px; padding-bottom: 60px; }
+.welcome-title { text-align: center; font-family: cursive; margin-bottom: 5px; }
+.welcome-subtitle { text-align: center; color: #666; margin-bottom: 25px; }
+
+/* Boite de recherche (Vert Teal) */
+.search-box-container {
+  background-color: #008B8B;
+  padding: 20px;
+  border-radius: 20px;
+  color: white;
+  margin-bottom: 30px;
+}
+.search-box-title { font-size: 1.1rem; margin-bottom: 10px; font-weight: 600; }
+.search-inputs { display: flex; flex-direction: column; gap: 10px; margin-bottom: 15px; }
+.search-input { padding: 12px; border-radius: 25px; border: none; outline: none; }
+.btn-search-action {
+  width: 100%; padding: 12px;
+  background-color: #006666; color: white;
+  border: 1px solid rgba(255,255,255,0.3); border-radius: 25px;
+  font-weight: bold; cursor: pointer;
+}
+
+/* Grille Spécialités */
+.specialties-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+.spec-card {
+  border-radius: 15px; padding: 15px 5px;
+  text-align: center; display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  height: 110px; cursor: pointer; transition: transform 0.2s;
+}
+.spec-card:hover { transform: scale(1.03); }
+.spec-icon { font-size: 1.8rem; margin-bottom: 5px; }
+.spec-name { font-size: 0.75rem; font-weight: bold; color: #333; line-height: 1.2; }
+.spec-count { font-size: 0.6rem; color: #555; margin-top: 3px; }
+
+/* Liste Médecins */
+.doctors-list-vertical { display: flex; flex-direction: column; gap: 15px; }
+.doc-card-horizontal {
+  background: #EAEAEA; /* Gris clair comme sur l'image */
+  border-radius: 15px; padding: 15px;
+  display: flex; align-items: center; gap: 15px;
+}
+.doc-avatar { width: 60px; height: 60px; border-radius: 10px; object-fit: cover; }
+.doc-info { flex: 1; }
+.doc-name { font-size: 1rem; margin: 0 0 3px 0; color: #222; }
+.doc-job { font-size: 0.8rem; color: #008B8B; font-weight: bold; margin: 0; }
+.doc-loc { font-size: 0.75rem; color: #666; margin: 2px 0; }
+.btn-book-small {
+  background-color: #98FB98; color: #006400; border: none;
+  padding: 6px 12px; border-radius: 15px; font-size: 0.7rem; font-weight: bold; cursor: pointer;
+}
+
+/* Footer Custom */
+.custom-footer {
+  background: white; padding: 40px 20px;
+  display: flex; flex-direction: column; align-items: center; text-align: center;
+  border-top: 1px solid #eee;
+}
+.footer-left { margin-bottom: 20px; }
+.footer-cols { display: flex; justify-content: center; gap: 30px; text-align: left; width: 100%; max-width: 800px; }
+.footer-col-item h4 { margin-bottom: 15px; font-size: 0.95rem; font-weight: bold; }
+.footer-col-item p { margin-bottom: 8px; font-size: 0.85rem; color: #777; cursor: pointer; }
+.footer-col-item p:hover { color: #008B8B; }
+
+@media (max-width: 600px) {
+  .footer-cols { flex-direction: column; text-align: center; gap: 20px; }
+}

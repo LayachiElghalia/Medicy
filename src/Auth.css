@@ -1,0 +1,218 @@
+/* src/Auth.css */
+
+/* Fond général de la page (Beige très clair) */
+.auth-page {
+  min-height: 100vh;
+  background-color: #F9F7F2;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* En-tête gris avec le logo */
+.auth-header-bar {
+  width: 100%;
+  background-color: #A9A9A9; /* Gris foncé du haut */
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.auth-logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #000;
+}
+
+/* Titre de la page (ex: inscription) */
+.page-heading {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #000;
+  font-family: serif; /* Police avec empattement comme sur l'image */
+}
+
+/* Le bloc gris du formulaire */
+.auth-card {
+  background-color: #Dcdcdc; /* Gris clair du formulaire */
+  padding: 30px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.auth-title-card {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Styles des champs (Inputs) */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.auth-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 0.95rem;
+  box-sizing: border-box; /* Important pour ne pas dépasser */
+}
+
+/* Boutons Sexe (Féminin / Masculin) */
+.gender-group {
+  display: flex;
+  gap: 10px;
+}
+
+.gender-btn {
+  flex: 1;
+  padding: 8px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.gender-btn.selected {
+  background-color: #e0e0e0;
+  border-color: #999;
+  font-weight: bold;
+}
+
+/* Note mot de passe */
+.password-note {
+  font-size: 0.7rem;
+  color: #666;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+/* Checkbox et liens */
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.forgot-link {
+  color: #008080; /* Couleur bleu-vert de l'image */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Bouton Principal (Marron/Vert foncé) */
+.auth-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #8daaa8; /* Vert/Grisé de l'image */
+  color: #000;
+  border: none;
+  border-radius: 25px; /* Arrondi */
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-bottom: 15px;
+}
+
+.auth-btn:hover {
+  background-color: #7a9997;
+}
+
+/* Footer liens */
+.auth-footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.auth-footer a {
+  color: #008080;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* src/Auth.css */
+.auth-page {
+  min-height: 100vh;
+  background-color: #F9F7F2;
+  display: flex; flex-direction: column; align-items: center;
+  font-family: sans-serif;
+}
+.auth-header-bar { width: 100%; background-color: #A9A9A9; padding: 10px 20px; display: flex; margin-bottom: 20px; }
+.auth-logo img { height: 30px; }
+.page-heading { color: #ccc; margin-bottom: 10px; align-self: flex-start; margin-left: 20px; }
+
+.auth-card {
+  background-color: #Dcdcdc; padding: 30px; border-radius: 15px; width: 90%; max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.center-text { text-align: center; }
+
+.auth-input {
+  width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;
+  background-color: #f0f0f0; margin-bottom: 15px; box-sizing: border-box;
+}
+.auth-btn {
+  width: 100%; padding: 12px; background-color: #8daaa8; color: #000;
+  border: none; border-radius: 25px; font-weight: bold; cursor: pointer; margin-top: 10px;
+}
+.icon-circle.green { color: #25D366; font-size: 3rem; }
+.back-btn { background: none; border: none; font-size: 1rem; cursor: pointer; float: left; }
+/* --- Ajouts pour la page LogoutSuccess --- */
+
+/* Le cercle vert */
+.success-icon-circle {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #4CD964, #28a745); /* Dégradé vert */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px auto; /* Centré horizontalement */
+  box-shadow: 0 10px 20px rgba(76, 217, 100, 0.3); /* Ombre portée verte douce */
+}
+
+/* Le bouton sarcelle spécifique */
+.btn-teal {
+  background-color: #008080 !important; /* Couleur sarcelle de l'image */
+  color: white !important;
+  font-size: 1rem;
+  padding: 15px;
+  border-radius: 25px;
+}
+
+.btn-teal:hover {
+  background-color: #006666 !important; /* Un peu plus foncé au survol */
+}

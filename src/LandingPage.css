@@ -1,0 +1,244 @@
+/* --- Reset & Global --- */
+.landing-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #FAFAFA;
+  line-height: 1.6;
+}
+
+.landing-container a { text-decoration: none; color: inherit; }
+.landing-container ul { list-style: none; padding: 0; margin: 0; }
+.landing-container img { max-width: 100%; display: block; }
+
+/* --- Navbar --- */
+.lp-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.lp-logo { font-size: 1.4rem; font-weight: bold; display: flex; align-items: center; gap: 5px; }
+.lp-nav-links { display: flex; gap: 25px; font-weight: 500; font-size: 0.95rem; }
+.lp-nav-links a:hover { color: #0D7C75; }
+
+.lp-btn-login {
+  background: #222;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* --- Hero Section --- */
+.lp-hero {
+  display: flex;
+  align-items: center;
+  padding: 0; /* Image prend toute la place à droite */
+  background: #F0F2F5;
+  height: 600px;
+  overflow: hidden;
+}
+
+.lp-hero-content {
+  flex: 1;
+  padding: 60px;
+}
+
+.lp-hero-content h1 {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.lp-hero-image {
+  flex: 1.2;
+  height: 100%;
+}
+
+.lp-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lp-btn-primary {
+  background: #0D7C75; /* Vert Medicy */
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* --- Sections --- */
+.lp-section { padding: 80px 60px; }
+
+.lp-title {
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+/* --- Expertise Cards --- */
+.lp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.lp-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+
+.lp-card:hover { transform: translateY(-5px); }
+
+.lp-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-text { padding: 20px; }
+.card-text h3 { color: #222; margin-bottom: 10px; }
+.card-text p { color: #666; font-size: 0.9rem; }
+
+/* --- Team Section --- */
+.lp-team { display: flex; align-items: center; gap: 50px; background: white; }
+.lp-text { flex: 1; }
+.lp-text h3 { margin-top: 25px; margin-bottom: 5px; font-size: 1.1rem; }
+.lp-image { flex: 1; }
+.lp-image img { width: 100%; border-radius: 8px; }
+
+/* --- About (Vert) --- */
+.lp-about {
+  background: #0D7C75;
+  color: white;
+  padding: 80px 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Forme décorative en arrière plan style image */
+.lp-about::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: url('data:image/svg+xml;base64,...') no-repeat center; /* Optionnel */
+  opacity: 0.1;
+}
+
+.lp-about-content {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.circle-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid rgba(255,255,255,0.2);
+}
+
+.lp-about-text h2 { font-size: 2rem; margin-bottom: 20px; }
+.lp-about-text p { font-size: 1.1rem; line-height: 1.8; }
+
+/* --- Services --- */
+.lp-services-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.service-item {
+  flex: 1;
+  background: #FFF;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+}
+
+.s-icon-img {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.s-icon-img img {
+  width: 100%;
+  height: auto;
+}
+
+/* --- Footer --- */
+.lp-footer {
+  background: #FFF;
+  padding: 60px;
+  border-top: 1px solid #EAEAEA;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-col { flex: 1; min-width: 200px; }
+.footer-col h3 { color: #222; margin-bottom: 20px; font-size: 1.2rem; }
+.footer-col h4 { color: #222; margin-bottom: 20px; font-size: 1rem; font-weight: bold; }
+.footer-col a {
+  display: block;
+  color: #666;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+.footer-col a:hover { color: #0D7C75; text-decoration: underline; }
+
+.footer-bottom {
+  width: 100%;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #EEE;
+  text-align: right;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .lp-hero, .lp-team, .lp-about-content, .lp-services-grid, .lp-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .lp-hero { height: auto; }
+  .lp-hero-content { padding: 40px 20px; order: 2; }
+  .lp-hero-image { order: 1; height: 300px; }
+  .lp-nav-links { display: none; } /* Menu burger à faire si besoin */
+  .lp-about-content { flex-direction: column; }
+}
+/* Ajoute ceci dans src/LandingPage.css */
+
+.logo-image {
+  height: 50px; /* Ajuste la hauteur selon tes besoins */
+  width: auto;  /* Garde les proportions */
+  object-fit: contain;
+}
